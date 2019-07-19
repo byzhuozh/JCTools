@@ -48,6 +48,8 @@ public final class RangeUtil
 
     public static int checkLessThanOrEqual(int n, long expected, String name)
     {
+        // 要求队列的容量值必须不小于 expected 值，这个 expected 值由上层决定，但是对 MpscUnboundedArrayQueue 而言，expected 为 2；
+        // 那么就是说 MpscUnboundedArrayQueue 的值必须不小于 2；
         if (n > expected)
         {
             throw new IllegalArgumentException(name + ": " + n + " (expected: <= " + expected + ')');
@@ -64,5 +66,10 @@ public final class RangeUtil
         }
 
         return n;
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(1 << (8 + 1));
     }
 }

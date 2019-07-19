@@ -42,6 +42,15 @@ public class MpscUnboundedArrayQueueSnapshotTest {
     }
 
     @Test
+    public void test_Size_MpscUnboundedArrayQueue(){
+        for (int i = 0; i < 5; i++) {
+            queue.offer(i);
+        }
+        System.out.println(queue.size());
+    }
+
+
+    @Test
     public void testIterator() {
         queue.offer(0);
         assertThat(iteratorToList(), contains(0));

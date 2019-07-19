@@ -23,6 +23,9 @@ import static org.jctools.queues.LinkedArrayQueueUtil.length;
  * resize, instead a link to the new chunk is stored in the old chunk for the consumer to follow.<br>
  *
  * @param <E>
+ *
+ * 多个生产者对单个消费者（无锁、有界和无界都有实现）
+ * many_produce_single_consumer
  */
 public class MpscUnboundedArrayQueue<E> extends BaseMpscLinkedArrayQueue<E>
 {
@@ -31,6 +34,8 @@ public class MpscUnboundedArrayQueue<E> extends BaseMpscLinkedArrayQueue<E>
 
     public MpscUnboundedArrayQueue(int chunkSize)
     {
+        // 调用父类的含参构造方法
+        // 通过调用父类的构造方法，分配了一个数据缓冲区，初始化容量大小，并且容量值不小于2，就这样队列的实例化操作已经完成了；
         super(chunkSize);
     }
 
@@ -74,12 +79,14 @@ public class MpscUnboundedArrayQueue<E> extends BaseMpscLinkedArrayQueue<E>
     @Override
     protected int getNextBufferSize(E[] buffer)
     {
+        // 获取buffer缓冲区的长度
         return length(buffer);
     }
 
     @Override
     protected long getCurrentBufferCapacity(long mask)
     {
+        // 获取当前缓冲区的容量值
         return mask;
     }
 }

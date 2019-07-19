@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.jctools.queues.BaseMpscLinkedArrayQueue</OriginalElement>
+  <nodes>
+    <node x="346.125" y="810.0">org.jctools.queues.BaseMpscLinkedArrayQueue</node>
+    <node x="40.71323529411765" y="729.0">org.jctools.queues.BaseMpscLinkedArrayQueueColdProducerFields</node>
+    <node x="227.25" y="81.0">java.util.Collection</node>
+    <node x="214.75" y="243.0">java.util.AbstractQueue</node>
+    <node x="53.21323529411765" y="405.0">org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields</node>
+    <node x="234.75" y="0.0">java.lang.Iterable</node>
+    <node x="0.0" y="243.0">org.jctools.queues.IndexedQueueSizeUtil.IndexedQueue</node>
+    <node x="9.0" y="162.0">org.jctools.util.InternalAPI</node>
+    <node x="344.125" y="891.0">org.jctools.queues.MpscUnboundedArrayQueue</node>
+    <node x="137.0" y="162.0">java.util.AbstractCollection</node>
+    <node x="555.7132352941176" y="729.0">org.jctools.queues.QueueProgressIndicators</node>
+    <node x="364.7132352941177" y="729.0">org.jctools.queues.MessagePassingQueue</node>
+    <node x="79.21323529411765" y="324.0">org.jctools.queues.BaseMpscLinkedArrayQueuePad1</node>
+    <node x="49.71323529411765" y="567.0">org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields</node>
+    <node x="79.21323529411765" y="648.0">org.jctools.queues.BaseMpscLinkedArrayQueuePad3</node>
+    <node x="79.21323529411765" y="486.0">org.jctools.queues.BaseMpscLinkedArrayQueuePad2</node>
+    <node x="305.0" y="162.0">java.util.Queue</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueuePad1" target="java.util.AbstractQueue">
+      <point x="56.75" y="-15.5" />
+      <point x="249.46323529411765" y="299.0" />
+      <point x="279.25" y="299.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueuePad3" target="org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueue" target="org.jctools.queues.BaseMpscLinkedArrayQueueColdProducerFields">
+      <point x="-67.0" y="-15.5" />
+      <point x="379.625" y="785.0" />
+      <point x="192.71323529411765" y="785.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueueColdProducerFields" target="org.jctools.queues.BaseMpscLinkedArrayQueuePad3">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.util.AbstractQueue" target="java.util.AbstractCollection">
+      <point x="-32.25" y="-15.5" />
+      <point x="247.0" y="218.0" />
+      <point x="211.0" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueue" target="org.jctools.queues.QueueProgressIndicators">
+      <point x="67.0" y="-15.5" />
+      <point x="513.625" y="785.0" />
+      <point x="646.7132352941176" y="785.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.MpscUnboundedArrayQueue" target="org.jctools.queues.BaseMpscLinkedArrayQueue">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.IndexedQueueSizeUtil.IndexedQueue" target="org.jctools.util.InternalAPI">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.util.Queue" target="java.util.Collection">
+      <point x="0.0" y="-15.5" />
+      <point x="347.5" y="137.0" />
+      <point x="305.25" y="137.0" />
+      <point x="26.0" y="15.5" />
+    </edge>
+    <edge source="java.util.AbstractQueue" target="java.util.Queue">
+      <point x="32.25" y="-15.5" />
+      <point x="311.5" y="218.0" />
+      <point x="347.5" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueuePad1" target="org.jctools.queues.IndexedQueueSizeUtil.IndexedQueue">
+      <point x="-56.75" y="-15.5" />
+      <point x="135.96323529411765" y="299.0" />
+      <point x="63.0" y="299.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueuePad2" target="org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueue" target="org.jctools.queues.MessagePassingQueue">
+      <point x="0.0" y="-15.5" />
+      <point x="446.625" y="785.0" />
+      <point x="450.2132352941177" y="785.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.util.Collection" target="java.lang.Iterable">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueueProducerFields" target="org.jctools.queues.BaseMpscLinkedArrayQueuePad1">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="java.util.AbstractCollection" target="java.util.Collection">
+      <point x="0.0" y="-15.5" />
+      <point x="211.0" y="137.0" />
+      <point x="253.25" y="137.0" />
+      <point x="-26.0" y="15.5" />
+    </edge>
+    <edge source="org.jctools.queues.BaseMpscLinkedArrayQueueConsumerFields" target="org.jctools.queues.BaseMpscLinkedArrayQueuePad2">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9202090592334494" x="333.60190817163937" y="737.698666386219" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

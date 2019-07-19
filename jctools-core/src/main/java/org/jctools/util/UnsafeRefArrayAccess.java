@@ -74,6 +74,7 @@ public final class UnsafeRefArrayAccess
      */
     public static <E> void soElement(E[] buffer, long offset, E e)
     {
+        // 通过Unsafe对象调用native方法，将元素e设置到buffer缓冲区的offset位置
         UNSAFE.putOrderedObject(buffer, offset, e);
     }
 
@@ -100,6 +101,7 @@ public final class UnsafeRefArrayAccess
     @SuppressWarnings("unchecked")
     public static <E> E lvElement(E[] buffer, long offset)
     {
+        // 通过Unsafe对象调用native方法，获取buffer缓冲区offset位置的元素
         return (E) UNSAFE.getObjectVolatile(buffer, offset);
     }
 

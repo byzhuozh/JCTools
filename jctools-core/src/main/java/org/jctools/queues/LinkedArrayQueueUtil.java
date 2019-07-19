@@ -14,6 +14,7 @@ final class LinkedArrayQueueUtil
 
     static int length(Object[] buf)
     {
+        // 直接通过length属性来获取数组的长度
         return buf.length;
     }
 

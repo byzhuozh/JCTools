@@ -11,6 +11,7 @@ public final class CircularArrayOffsetCalculator
     @SuppressWarnings("unchecked")
     public static <E> E[] allocate(int capacity)
     {
+        // 根据容量值创建数组
         return (E[]) new Object[capacity];
     }
 
